@@ -1,6 +1,6 @@
-package com.voll.api.medico;
+package com.voll.api.domain.medico;
 
-import com.voll.api.direccion.DatosDireccion;
+import com.voll.api.domain.direccion.DatosDireccion;
 import jakarta.validation.constraints.NotNull;
 
 public record DatosActualizacionMedico(

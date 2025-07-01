@@ -1,4 +1,4 @@
-package com.voll.api.direccion;
+package com.voll.api.domain.direccion;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

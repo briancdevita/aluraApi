@@ -1,10 +1,10 @@
-package com.voll.api.medico.models;
+package com.voll.api.domain.medico.models;
 
 
-import com.voll.api.direccion.models.Direccion;
-import com.voll.api.medico.DatosActualizacionMedico;
-import com.voll.api.medico.DatosRegistroMedico;
-import com.voll.api.medico.Especialidad;
+import com.voll.api.domain.direccion.models.Direccion;
+import com.voll.api.domain.medico.DatosActualizacionMedico;
+import com.voll.api.domain.medico.DatosRegistroMedico;
+import com.voll.api.domain.medico.Especialidad;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
