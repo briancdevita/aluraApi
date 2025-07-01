@@ -3,8 +3,8 @@ package com.voll.api.controller;
 
 import com.voll.api.domain.usuario.DatosAutenticacion;
 import com.voll.api.domain.usuario.Usuario;
-import com.voll.api.infra.exception.security.DatosTokenJwt;
-import com.voll.api.infra.exception.security.TokenService;
+import com.voll.api.infra.security.DatosTokenJwt;
+import com.voll.api.infra.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

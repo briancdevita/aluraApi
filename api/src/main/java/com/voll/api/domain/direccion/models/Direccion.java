@@ -113,4 +113,13 @@ public class Direccion {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
+    public Direccion actualizarDatos(DatosDireccion direccion) {
+        this.calle = direccion.calle();
+        this.numero = direccion.numero();
+        this.codigo_postal = direccion.codigo_postal();
+        this.complemento = direccion.complemento();
+        this.ciudad = direccion.ciudad();
+        return this;
+    }
 }

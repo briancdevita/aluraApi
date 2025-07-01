@@ -1,4 +1,4 @@
-package com.voll.api.infra.exception.security;
+package com.voll.api.infra.security;
 
 public record DatosTokenJwt (
         String token
