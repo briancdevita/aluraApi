@@ -1,6 +1,7 @@
 package com.voll.api.infra.exception;
 
 
+import com.voll.api.domain.ValidacionException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -24,6 +25,13 @@ public class GestorDeErrores {
         var errores = ex.getFieldErrors();
         return ResponseEntity.badRequest().body(errores.stream().map(DatosErrorValidacion::new).toList());
     }
+
+    @ExceptionHandler(ValidacionException.class)
+    public ResponseEntity tratarErrorDeValidacion (ValidacionException e ) {
+       return ResponseEntity.badRequest().body(e.getMessage());
+    }
+
+
 
 
     public record DatosErrorValidacion(String campo, String mensaje) {

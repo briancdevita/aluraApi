@@ -7,10 +7,8 @@ import jakarta.validation.constraints.Pattern;
 public record DatosDireccion(
         @NotBlank String calle,
         String numero,
-        String complemento,
-        @NotBlank String barrio,
-        @NotBlank @Pattern(regexp = "\\d{4}") String codigo_postal,
+        @NotBlank String distrito,
         @NotBlank String ciudad,
-        @NotBlank String estado
+        @NotBlank String complemento
 ) {
 }
